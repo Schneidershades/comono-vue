@@ -9,14 +9,14 @@
 
           <div class="md:flex sm:hidden">
             <h4 class="text-black font-medium mx-3 cursor-pointer ml-10 text-[14px]">
-              <a href="/">Products</a>
+              <a href="#products">Products</a>
             </h4>
 
             <h4 class="text-black font-medium mx-3 cursor-pointer ml-10 text-[14px]">
               <a href="#">Developer</a>
             </h4>
             <h4 class="text-black font-medium mx-3 cursor-pointer ml-10 text-[14px]">
-              <a href="#">Why Comono</a>
+              <a href="#why">Why Comono</a>
             </h4>
             <h4 class="text-black font-medium mx-3 cursor-pointer ml-10 text-[14px]">
               <a href="#">Contact Us</a>
@@ -58,26 +58,26 @@
 
               <div class=" md:block bg-white " id="menu" v-if="menu">
                 <h4 class="text-black font-medium cursor-pointer ml-10 text-[14px] my-2">
-                  <a href="/">Products</a>
+                  <a href="#products">Products</a>
                 </h4>
 
                 <h4
                   class="text-black font-medium cursor-pointer ml-10 text-[14px] my-2"
                   id="main-pricing mt-2"
                 >
-                  <a href="/">Developer</a>
+                  <a href="#">Developer</a>
                 </h4>
                 <h4 class="text-black font-medium cursor-pointer ml-10 text-[14px] my-2">
-                  <a href="/">Why Comono</a>
+                  <a href="#why">Why Comono</a>
                 </h4>
                 <h4 class="text-black font-medium  cursor-pointer ml-10 text-[14px] my-2">
-                  <a href="/">Contact Us</a>
+                  <a href="#">Contact Us</a>
                 </h4>
                 <h4 class="text-primary font-medium cursor-pointer ml-10 my-2 text-[14px]">
-                  <a href="/">Log In</a>
+                  <a href="#">Log In</a>
                 </h4>
                 <button class="bg-primary text-white font-light text-[14px] cursor-pointer py-2 px-4 rounded-[4px] ml-10 my-2">
-                  <a href="/">Sign Up</a>
+                  <a href="#">Sign Up</a>
                 </button>
               </div>
           </div>
@@ -131,7 +131,7 @@
             :space-between="30"
             :free-mode="true"
             :loop="true"
-            :autoplay="true"
+            :autoplay="{ autoplay: true }"
             :pagination="{ clickable: true }"
             :scrollbar="{ draggable: false }">
 
@@ -221,7 +221,7 @@
 
 
 
-        <div class="px-4  lg:px-32">
+        <div class="px-4  lg:px-32" id="products">
           <h4 class="flex justify-center text-xl text-black font-semibold">
             Our Products
           </h4>
@@ -359,7 +359,7 @@
           </div>
         </div>
 
-        <div class="bg-primary pt-14  mb-6">
+        <div class="bg-primary pt-14  mb-6" id="why">
           <div class="md:flex  justify-center px-4  lg:px-32 items-center">
             <div>
               <div class="flex justify-center -ml-[85px] mt-1 mb-2">
@@ -640,7 +640,6 @@
             </h4>
           </div>
 
-
           <swiper
             :slides-per-view="3"
             :space-between="30"
@@ -738,6 +737,15 @@
             </swiper-slide>
           </swiper>
         </div>
+
+        <div class="px-4  lg:px-32 pb-16 ">
+          <div>
+            <h4 class="flex justify-center text-xl text-black font-semibold mb-6 md:mb-10 text-center">
+              Contact Us
+            </h4>
+          </div>
+
+        </div>
     
       </div>
     </div>
@@ -833,6 +841,7 @@
 
   const menu = ref(false)
   const affilate = ref(false)
+
 
   const setShow = () => {
     if(menu.value == true){
