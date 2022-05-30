@@ -98,7 +98,7 @@
                   <h1 class="md:text-3xl font-semibold  text-primary text-2xl flex justify-center lg:-ml-[110px] ">
                     Address Verification
                     <div class="-mt-[15px] -mr-[-5px]">
-                      <img class="w-[30px] " src="https://comono.skoutwatch.com/images/stripe.png" />
+                      <img class="w-[30px] " src="https://comono.skoutwatch.com/images/stripe2.png" />
                     </div>
                   </h1>
                 </div>
@@ -117,9 +117,9 @@
               </div>
             </div>
           </div>
-          <div class="mt-10 lg:mt-0">
+          <!-- <div class="mt-10 lg:mt-0">
             <img class="mx-auto lg:mx-0" src="https://comono.skoutwatch.com/images/background.png" />
-          </div>
+          </div> -->
         </div>
 
         <div class="px-4 lg:px-32 mb-16">
